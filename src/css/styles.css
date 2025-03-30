@@ -16,3 +16,253 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  margin: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-left: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+}
+
+.timer-input {
+  border-radius: 4px;
+  width: 280px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  outline: none;
+  padding: 0px 8px 0px 16px;
+  border: 1px solid #808080;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
+.timer-input:hover {
+  border: 1px solid #2e2f42;
+}
+
+.timer-input:active {
+  border: 1px solid #4e75ff;
+}
+
+.timer-input:disabled {
+  color: #808080;
+  background: #fafafa;
+  border: 1px solid #808080;
+}
+
+.button-start,
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: none;
+}
+
+.button-start:hover,
+.button:hover {
+  background: #6c8cff;
+}
+
+.button-start:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+
+.flatpickr-day.selected {
+  background: #4e75ff !important;
+  color: #fff !important;
+}
+
+.flatpickr-day.today {
+  border-color: #4e75ff !important;
+}
+
+.flatpickr-day {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  letter-spacing: 0.04em !important;
+  text-align: center !important;
+  color: #666 !important;
+}
+
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+  color: #ccc !important;
+  pointer-events: none !important;
+}
+
+.flatpickr-month {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #333 !important;
+}
+
+.flatpickr-weekdays {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #2e2f42 !important;
+}
+
+.iziToast-close {
+  display: none !important;
+}
+
+.task2-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  margin: 24px;
+}
+
+.task2-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0;
+}
+
+.task2-input {
+  width: 360px;
+  margin-bottom: 16px;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+.task2-input:hover {
+  border: 1px solid #2e2f42;
+}
+
+.task2-input:active,
+.task2-input:focus {
+  border: 1px solid #4e75ff;
+}
+
+.task2-delay-label {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task2-radio-btn {
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: #4e75ff;
+}
+
+.task2-legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-left: -20px;
+}
+
+.task2-create-btn {
+  width: 360px;
+  height: 40px;
+}
+
+fieldset {
+  width: 360px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 14px 48px 8px 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+fieldset:hover,
+fieldset:focus {
+  border: 1px solid #2e2f42;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  width: 16px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-sub {
+  min-width: 200px;
+
+}
